@@ -18,3 +18,29 @@
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
 }
+
+
+/*SECTION II - Variables*/
+
+html {
+    --bright: cyan;
+    --dark: black;
+    --bg-img: url(https://slogllykop.github.io/Youtube_v2/img/bg.gif);
+    --yt-name: "Slogllykop";
+}
+
+
+/*Section III - Main*/
+
+/*Main Background*/
+
+#page-manager::before {
+    content: " ";
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.75;
+    filter: blur(0.75px) brightness(2);
+  }
