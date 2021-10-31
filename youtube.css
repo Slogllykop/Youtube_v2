@@ -88,6 +88,7 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
 
 #container.ytd-masthead {
     background: transparent;
+    border-bottom: 1px solid var(--bright);
 }
 
 #container.ytd-masthead::before {
@@ -140,4 +141,21 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
     height: 30px;
     color: var(--bright) !important;
     opacity: 1;
+}
+
+.style-scope.ytd-app#guide-inner-content {
+    background-color: transparent;
+    border-right: 1px solid var(--bright);
+}
+
+.style-scope.ytd-app#guide-inner-content::before {
+    content: " ";
+    position: absolute;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(1px);
+    opacity: var(--aplha-75);
 }
