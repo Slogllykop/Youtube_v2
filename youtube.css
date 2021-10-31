@@ -10,13 +10,21 @@
 /*SECTION I - MISC*/
 
 /*Fonts import*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 /*Global Font*/
+
 *{
     font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
+}
+
+/*Unnecessary Stuff*/
+
+iron-selector#chips.style-scope.yt-chip-cloud-renderer {
+    display: none;
 }
 
 
@@ -46,13 +54,14 @@
 }
 
 /*"Youtube" Replacement*/
+
 ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer, #logo-icon {
     visibility: hidden;
 }
     
 ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer::before, #logo-icon::before {
     visibility: visible;
-    content: "Slogllykop";
+    content: var(--yt-name) !important;
     font-weight: 800;
     font-size: 17px;
     position: absolute;
