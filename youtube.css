@@ -44,3 +44,23 @@
     opacity: 0.75;
     filter: blur(0.75px) brightness(2);
 }
+
+/*"Youtube" Replacement*/
+ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer, #logo-icon {
+    visibility: hidden;
+}
+    
+ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer::before, #logo-icon::before {
+    visibility: visible;
+    content: "Slogllykop";
+    font-weight: 800;
+    font-size: 17px;
+    position: absolute;
+    transition: 1s;
+}
+    
+ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover::before, #logo-icon:hover::before {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px var(--bright));
+    transition: 1s;
+}
