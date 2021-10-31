@@ -112,6 +112,11 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
     background-color: transparent;
     border: 1px solid var(--bright);
     border-radius: 17px 0 0 17px;
+    z-index: 2;
+}
+
+input#search::placeholder {
+    color: var(--bright) !important;
 }
 
 #container.ytd-searchbox::before {
@@ -122,6 +127,7 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
     background-color: var(--bright);
     opacity: var(--alpha-25);
     border-radius: 17px 0 0 17px;
+    z-index: -1;
     transform: translateX(-1%) !important;
 }
 
