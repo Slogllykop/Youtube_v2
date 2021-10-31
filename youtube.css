@@ -37,6 +37,15 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
     --yt-name: "Slogllykop";
 }
 
+html:not(.style-scope)[dark], :not(.style-scope)[dark] {
+    /*search box*/
+    --ytd-searchbox-legacy-border-color: var(--bright);
+    --ytd-searchbox-legacy-button-border-color: var(--bright);
+    --ytd-searchbox-background: transparent;
+    --ytd-searchbox-text-color: var(--bright);
+    --ytd-searchbox-legacy-button-hover-border-color: var(--bright);
+}
+
 
 /*Section III - Main*/
 
@@ -70,7 +79,7 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer::befo
     
 ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover::before, #logo-icon:hover::before {
     cursor: pointer;
-    filter: drop-shadow(0px 0px 3px var(--bright)) drop-shadow(0px 0px 1px var(--bright)) drop-shadow(0px 1px 2px var(--bright));
+    filter: drop-shadow(0px 0px 3px var(--bright));
     transition: 1s;
 }
 
