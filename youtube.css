@@ -1,0 +1,20 @@
+/*==========================================*/
+/* @version                ver: 0.0.1 beta  */
+/* @Last update            date: 31/10/21   */
+/*==========================================*/
+
+
+/*START OF CSS*/
+
+
+/*SECTION I - MISC*/
+
+/*Fonts import*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/*Global Font*/
+*{
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
