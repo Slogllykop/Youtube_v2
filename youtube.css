@@ -35,6 +35,9 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
     --dark: black;
     --bg-img: url(https://slogllykop.github.io/Youtube_v2/img/bg.gif);
     --yt-name: "Slogllykop";
+    --alpha-25: 0.25; 
+    --alpha-50: 0.5; 
+    --alpha-75: 0.75; 
 }
 
 
@@ -84,22 +87,57 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
 /*Top bar*/
 
 #container.ytd-masthead {
-  background: transparent;
+    background: transparent;
 }
 
 #container.ytd-masthead::before {
-  content: " ";
-  position: absolute;
-  background-image: var(--bg-img);
-  background-repeat: no-repeat;
-  width: 110%;
-  height: 100%;
-  background-size: cover;
-  filter: blur(1px);
-  transform: translateX(-5%) !important;
-  opacity: 0.7;
+    content: " ";
+    position: absolute;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    width: 110%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(1px);
+    transform: translateX(-5%) !important;
+    opacity: var(--aplha-75);
 }
 
 #buttons.ytd-masthead > *.ytd-masthead { /*Profile fix*/
     z-index: 1 !important;
+}
+
+#container.ytd-searchbox { /*Search bar*/
+    background-color: transparent;
+    border: 1px solid var(--bright);
+    border-radius: 17px 0 0 17px;
+}
+
+#container.ytd-searchbox::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bright);
+    opacity: var(--alpha-25);
+    border-radius: 17px 0 0 17px;
+    transform: translateX(-1%) !important;
+}
+
+#search-icon-legacy.ytd-searchbox, ytd-searchbox[desktop-search-bar-big-tap-target] #search-icon-legacy.ytd-searchbox {
+    border: 1px solid var(--bright);
+    background-color: transparent;
+    border-radius: 0px 17px 17px 0px;
+}
+
+#search-icon-legacy.ytd-searchbox:hover, ytd-searchbox[desktop-search-bar-big-tap-target] #search-icon-legacy.ytd-searchbox:hover {
+    border: 1px solid var(--bright);
+    background-color: var(--dark);
+}
+
+#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
+    width: 30px;
+    height: 30px;
+    color: var(--bright) !important;
+    opacity: 1;
 }
