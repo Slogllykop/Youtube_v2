@@ -37,29 +37,16 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
     --yt-name: "Slogllykop";
 }
 
-html:not(.style-scope)[dark], :not(.style-scope)[dark] {
-    /*search box*/
-    --ytd-searchbox-legacy-border-color: var(--bright);
-    --ytd-searchbox-legacy-button-border-color: var(--bright);
-    --ytd-searchbox-background: transparent;
-    --ytd-searchbox-text-color: var(--bright);
-    --ytd-searchbox-legacy-button-hover-border-color: var(--bright);
-}
-
 
 /*Section III - Main*/
 
 /*Background*/
 
-#page-manager::before {
-    content: " ";
-    background-image: var(--bg-img) !important;
-    background-repeat: no-repeat;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    opacity: 0.75;
-    filter: blur(0.75px) brightness(2);
+ytd-app {
+  background-image: var(--bg-img) !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /*"Youtube" Replacement*/
