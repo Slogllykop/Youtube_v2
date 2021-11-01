@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.3.0 beta  */
+/* @version                ver: 0.3.2 beta  */
 /* @Last update            date: 01/11/21   */
 /*==========================================*/
 
@@ -32,12 +32,23 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
 
 * {
     --bright: cyan;
+    --bright-2: #00bbff;
     --dark: black;
     --bg-img: url(https://slogllykop.github.io/Youtube_v2/img/bg.gif);
     --yt-name: "Slogllykop";
     --alpha-25: 0.25; 
     --alpha-50: 0.5; 
     --alpha-75: 0.75; 
+}
+
+html:not(.style-scope)[dark], :not(.style-scope)[dark] {
+    --yt-spec-text-primary: var(--bright); /*primary text eg. links*/
+    --yt-spec-text-secondary: var(--bright-2); /*secondary text eg. channel on cards*/
+    --yt-spec-icon-active-other: var(--bright); /*icons eg. notif icon*/
+    --yt-spec-static-brand-white: var(--dark); /*text in time of video card*/
+    --yt-spec-static-overlay-background-heavy: var(--bright); /*background for time of video card*/
+    --yt-spec-brand-link-text: var(--bright); /*live indicator for video card*/
+    
 }
 
 
