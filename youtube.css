@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.3.4 beta  */
+/* @version                ver: 0.3.5 beta  */
 /* @Last update            date: 01/11/21   */
 /*==========================================*/
 
@@ -54,6 +54,7 @@ html:not(.style-scope)[dark], :not(.style-scope)[dark] {
     --yt-spec-brand-icon-active: var(--bright-2); /*left bar icon when selected*/
     --yt-button-color: var(--bright-2); /*manage button, sort icons, voice icon*/
     --yt-spec-wordmark-text: var(--bright); /*Youtube replacement name*/
+    --ytd-searchbox-text-color: var(--bright); /*Searchbox text*/
 }
 
 
