@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.2.9 beta  */
+/* @version                ver: 0.3.0 beta  */
 /* @Last update            date: 01/11/21   */
 /*==========================================*/
 
@@ -209,6 +209,17 @@ ytd-voice-search-dialog-renderer[dialog]::before {
     border-bottom: 1px solid var(--bright);
 }
 
+#chips-wrapper.ytd-feed-filter-chip-bar-renderer::before {
+    content: " ";
+    position: absolute;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(1px);
+}
+
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected] { /*Active*/
     background-color: transparent;
     color: var(--bright);
@@ -238,6 +249,24 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-rend
 
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:hover {
     background-color: transparent !important;
+}
+
+#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer { /*arrow buttons*/
+    background-color: transparent;
+}
+
+#left-arrow-button.ytd-feed-filter-chip-bar-renderer::before, #right-arrow-button.ytd-feed-filter-chip-bar-renderer::before {
+    content: " ";
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background-color: var(--bright);
+    opacity: var(--alpha-75);
+    z-index: -1;
+}
+
+ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-chip-bar-renderer::before, ytd-feed-filter-chip-bar-renderer[is-dark-theme] #left-arrow.ytd-feed-filter-chip-bar-renderer::after { 
+    visibility: hidden;
 }
 
 /*left bar*/
