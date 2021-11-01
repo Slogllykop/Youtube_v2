@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.3.5 beta  */
+/* @version                ver: 0.3.6 beta  */
 /* @Last update            date: 01/11/21   */
 /*==========================================*/
 
@@ -55,6 +55,7 @@ html:not(.style-scope)[dark], :not(.style-scope)[dark] {
     --yt-button-color: var(--bright-2); /*manage button, sort icons, voice icon*/
     --yt-spec-wordmark-text: var(--bright); /*Youtube replacement name*/
     --ytd-searchbox-text-color: var(--bright); /*Searchbox text*/
+    --yt-spec-10-percent-layer: transparent !important; /*left bar hover, divider lines*/
 }
 
 
@@ -314,6 +315,12 @@ ytd-mini-guide-renderer { /*mini side bar*/
 
 ytd-mini-guide-entry-renderer {
     background-color: transparent;
+}
+
+ytd-guide-entry-renderer[active] { /*left bar selected item*/
+    background-color: transparent;
+    border: 1px solid var(--bright);
+    width: 220px;
 }
 
 /*Subscibe button*/
