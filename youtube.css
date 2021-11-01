@@ -33,7 +33,7 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
 * {
     --bright: cyan;
     --bright-2: #00bbff;
-    --dark: black;
+    --dark: #004545;
     --bg-img: url(https://slogllykop.github.io/Youtube_v2/img/bg.gif);
     --yt-name: "Slogllykop";
     --alpha-25: 0.25; 
