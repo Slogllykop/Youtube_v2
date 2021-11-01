@@ -89,6 +89,10 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
     transition: 1s;
 }
 
+#country-code.ytd-topbar-logo-renderer { /*Country flag*/
+    z-index: 1;
+}
+
 /*Video Links - Animation*/
 
 #items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #dismissible.ytd-video-renderer, #items.yt-horizontal-list-renderer > *.yt-horizontal-list-renderer, ytd-rich-item-renderer {
@@ -241,11 +245,11 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
     border: 1px solid var(--bright);
 }
 
-yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]:hover {
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]:hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]:hover {
     background-color: transparent;
 }
 
-yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]::before {
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]::before, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]::before {
     content: " ";
     position: absolute;
     width: 100%;
