@@ -56,6 +56,10 @@ html:not(.style-scope)[dark], :not(.style-scope)[dark] {
     --yt-spec-wordmark-text: var(--bright); /*Youtube replacement name*/
     --ytd-searchbox-text-color: var(--bright); /*Searchbox text*/
     --yt-spec-10-percent-layer: transparent !important; /*left bar hover, divider lines*/
+    --yt-spec-icon-inactive: var(--bright); /*likes in like dislike ratio*/
+    --yt-spec-icon-disabled: var(--dark) !important; /*dislikes in like dislike ratio*/
+    --ytd-menu-renderer-button-color: var(--bright-2); /*3 dot menu in video page*/
+    --yt-spec-call-to-action: var(--bright); /*Join button border*/
 }
 
 
@@ -346,3 +350,21 @@ tp-yt-paper-button.ytd-subscribe-button-renderer:hover {
     color: #fff;
 }
 
+
+/*Section IV - Video page*/
+
+/*borders missing*/
+
+ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder-area.ytd-comment-simplebox-renderer {
+    border-bottom: 1px solid var(--bright);
+}
+
+/*Join button*/
+
+ytd-button-renderer #button.ytd-button-renderer {
+    border-radius: 21px;
+    color: var(--bright-2);
+}
+
+
+/*END of CSS*/
