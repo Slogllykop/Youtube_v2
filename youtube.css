@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.3.2 beta  */
+/* @version                ver: 0.3.3 beta  */
 /* @Last update            date: 01/11/21   */
 /*==========================================*/
 
@@ -48,7 +48,12 @@ html:not(.style-scope)[dark], :not(.style-scope)[dark] {
     --yt-spec-static-brand-white: var(--dark); /*text in time of video card*/
     --yt-spec-static-overlay-background-heavy: var(--bright); /*background for time of video card*/
     --yt-spec-brand-link-text: var(--bright); /*live indicator for video card*/
-    
+    --yt-spec-brand-button-background: var(--bright-2); /*noti number bg*/
+    --yt-spec-brand-background-primary: var(--bright-2); /*noti number border*/
+    --yt-spec-brand-icon-inactive: var(--bright-2) !important; /*left bar icons*/
+    --yt-spec-brand-icon-active: var(--bright-2); /*left bar icon when selected*/
+    --yt-button-color: var(--bright-2); /*manage button, sort icons, voice icon*/
+    --yt-spec-wordmark-text: var(--bright); /*Youtube replacement name*/
 }
 
 
