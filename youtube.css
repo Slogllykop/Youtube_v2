@@ -327,6 +327,7 @@ ytd-guide-entry-renderer[active] { /*left bar selected item*/
     width: 220px;
 }
 
+
 /*Subscibe button*/
 
 tp-yt-paper-button.ytd-subscribe-button-renderer {
@@ -364,6 +365,18 @@ ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder
 ytd-button-renderer #button.ytd-button-renderer {
     border-radius: 21px;
     color: var(--bright-2);
+}
+
+#header.style-scope.ytd-app::before { /*left bar country*/
+    content: " ";
+    position: absolute;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    width: 105%;
+    height: 5.0%;
+    background-size: cover;
+    filter: blur(1px);
+    transform: translateX(-7%);
 }
 
 
