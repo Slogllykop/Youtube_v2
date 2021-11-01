@@ -101,7 +101,6 @@ ytd-topbar-logo-renderer[is-logo-updated] yt-icon.ytd-topbar-logo-renderer:hover
     background-size: cover;
     filter: blur(1px);
     transform: translateX(-5%) !important;
-    opacity: var(--aplha-75);
 }
 
 #buttons.ytd-masthead > *.ytd-masthead { /*Profile fix*/
@@ -295,3 +294,27 @@ ytd-mini-guide-renderer { /*mini side bar*/
 ytd-mini-guide-entry-renderer {
     background-color: transparent;
 }
+
+/*Subscibe button*/
+
+tp-yt-paper-button.ytd-subscribe-button-renderer {
+    background-color: var(--bright) !important;
+    border-radius: 28px;
+    color: var(--dark) !important;
+    transition: 0.5s;
+}
+
+tp-yt-paper-button.ytd-subscribe-button-renderer:hover {
+    background-color: transparent !important;
+    color: var(--bright) !important;
+    border: 1px solid var(--bright);
+    transform: translateX(2px);
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.ytp-sb-subscribe, a.ytp-sb-subscribe {
+    background-color: #a320fb;
+    color: #fff;
+}
+
