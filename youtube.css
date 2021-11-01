@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.3.7 beta  */
+/* @version                ver: 0.3.9 beta  */
 /* @Last update            date: 01/11/21   */
 /*==========================================*/
 
@@ -27,6 +27,22 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
     display: none;
 }
 
+/*scrollbar, selection*/
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: var(--dark) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(200deg, var(--bright-2) 0%, var(--bright-2) 100%) !important;
+}
+
+::selection {
+    background-color: var(--bright-2);
+    color: var(--dark);
+}
+
 
 /*SECTION II - Variables*/
 
@@ -36,6 +52,7 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
     --dark: #004545;
     --bg-img: url(https://slogllykop.github.io/Youtube_v2/img/bg.gif);
     --yt-name: "Slogllykop";
+    --player-icon-color: invert(80%) sepia(100%) saturate(7500%) hue-rotate(180deg) brightness(160%) contrast(150%);
     --alpha-25: 0.25; 
     --alpha-50: 0.5; 
     --alpha-75: 0.75; 
@@ -379,5 +396,58 @@ ytd-button-renderer #button.ytd-button-renderer {
     transform: translateX(-7%);
 }
 
+/*Player Controls*/
+
+.html5-video-player { /*bottom glow on player*/
+  box-shadow:  0 15px 15px -15px var(--bright);
+}
+
+.ytp-swatch-background-color { /*progress bar*/
+    background-color: var(--bright);
+}
+
+.ytp-time-separator { /*line between time*/
+    color: var(--bright-2);
+}
+
+.ytp-time-current, .ytp-time-duration { /*time*/
+    color: var(--bright);
+}
+
+.ytp-time-display, .ytp-exp-bigger-button-like-mobile.ytp-small-mode .ytp-time-display { /* time, chapters center*/
+    margin-left: 45%;
+    background-color: rgba(0 ,0, 0, 0.3);  
+}
+
+.ytp-volume-slider-handle:before, .ytp-volume-slider-handle { /*volume slider*/
+    background: var(--bright);
+}
+  
+.ytp-volume-slider-handle:after { /*Max volume*/
+    background: var(--dark);
+}
+  
+.ytp-chapter-title-content, .ytp-chapter-title-prefix { /*Chapter name*/
+    color: var(--bright-2);
+}
+
+.ytp-swatch-color {
+    color: var(--bright);
+    text-shadow: 0 0 9px var(--bright);
+}
+
+.ytp-mute-button.ytp-button, 
+.ytp-next-button.ytp-button, 
+.ytp-play-button.ytp-button, 
+.ytp-fullscreen-button.ytp-button, 
+.ytp-size-button.ytp-button, 
+.ytp-miniplayer-button.ytp-button, 
+.ytp-button.ytp-settings-button, 
+.ytp-subtitles-button.ytp-button, 
+.ytp-autonav-toggle-button-container, 
+.ytp-chapter-title-chevron {
+    filter: var(--player-icon-color);
+}
 
 /*END of CSS*/
+/*CSS by Sloglykop*/
