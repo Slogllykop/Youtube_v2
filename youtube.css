@@ -391,6 +391,35 @@ tp-yt-paper-button.ytd-subscribe-button-renderer:hover {
     margin-right: -2rem;
 }
 
+/*Chapters*/
+
+#header.ytd-engagement-panel-title-header-renderer { /*header*/
+    background-color: transparent;
+    border: 1px solid var(--bright);
+}
+
+#content.ytd-engagement-panel-section-list-renderer {  /*Chapters timstamps*/
+    background-color: transparent;
+    border-left: 1px solid var(--bright);
+    border-bottom: 1px solid var(--bright);
+}
+
+ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active] { /*chapter selected*/
+    background-color: transparent;
+    outline-style: solid;
+    outline-color: var(--bright);
+    outline-width: 1px;
+}
+
+#time.ytd-macro-markers-list-item-renderer { /*Time*/
+    background-color: var(--bright-2);
+    color: var(--dark);
+}
+
+#sync-button.ytd-macro-markers-list-renderer { /*Sync video to time color*/
+    color: var(--dark);
+}
+
 /*borders missing*/
 
 ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder-area.ytd-comment-simplebox-renderer {
