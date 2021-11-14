@@ -1,6 +1,6 @@
 /*==========================================*/
-/* @version                ver: 0.4.0 beta  */
-/* @Last update            date: 13/11/21   */
+/* @version                ver: 0.4.1 alpha */
+/* @Last update            date: 14/11/21   */
 /*==========================================*/
 
 
@@ -43,6 +43,15 @@ iron-selector#chips.style-scope.yt-chip-cloud-renderer {
     color: var(--dark);
 }
 
+/*Links*/
+
+a.yt-simple-endpoint.yt-formatted-string { /*Links on video page */
+    color: var(--bright-2);
+}
+
+a.yt-simple-endpoint.yt-formatted-string:visited { /*Visited*/
+    color: var(--bright-2);
+}
 
 /*SECTION II - Variables*/
 
@@ -330,7 +339,7 @@ ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-ch
 }
 
 ytd-mini-guide-renderer { /*mini side bar*/
-    background-color: transparent !important;
+    background-color: transparent;
     border-right: 1px solid var(--bright);
 }
 
