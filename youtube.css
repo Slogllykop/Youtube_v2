@@ -1,6 +1,6 @@
 /*==========================================*/
-/* @version                ver: 0.3.9 beta  */
-/* @Last update            date: 01/11/21   */
+/* @version                ver: 0.4.0 beta  */
+/* @Last update            date: 13/11/21   */
 /*==========================================*/
 
 
@@ -330,7 +330,7 @@ ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-ch
 }
 
 ytd-mini-guide-renderer { /*mini side bar*/
-    background-color: transparent;
+    background-color: transparent !important;
     border-right: 1px solid var(--bright);
 }
 
