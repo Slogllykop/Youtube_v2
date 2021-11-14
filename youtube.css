@@ -366,10 +366,21 @@ tp-yt-paper-button.ytd-subscribe-button-renderer:hover {
 .ytp-sb-subscribe, a.ytp-sb-subscribe {
     background-color: #a320fb;
     color: #fff;
-}
+} 
 
 
 /*Section IV - Video page*/
+
+/*Main reverse alignment*/
+
+#columns.ytd-watch-flexy {
+    flex-direction: row-reverse;
+}
+
+#secondary-inner {
+    border-right: 1px solid var(--bright);
+    margin-right: -2rem;
+}
 
 /*borders missing*/
 
