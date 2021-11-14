@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.4.3 alpha */
+/* @version                ver: 0.4.4 alpha */
 /* @Last update            date: 14/11/21   */
 /*==========================================*/
 
@@ -284,12 +284,13 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]:hover, yt-chip
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]::before, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]::before {
     content: " ";
     position: absolute;
-    width: 100%;
+    width: 230%;
     height: 100%;
     background-color: var(--bright);
     opacity: var(--alpha-25);
     z-index: -1;
     transform: translateX(-12%) !important;
+    border-radius: 17px;
 }
 
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] { /*remaining*/
