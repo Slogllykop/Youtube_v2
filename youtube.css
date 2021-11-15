@@ -1,5 +1,5 @@
 /*==========================================*/
-/* @version                ver: 0.4.6 alpha */
+/* @version                ver: 0.4.8 alpha */
 /* @Last update            date: 15/11/21   */
 /*==========================================*/
 
@@ -377,6 +377,15 @@ yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER][selected]:focus { /*se
     filter: blur(1px);
 }
 
+ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child),
+#sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child) { /*missing lines*/
+    border-top: 1px solid var(--bright);
+}
+
+#sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child) { /*missing lines*/
+    border-bottom: 1px solid var(--bright);
+}
+
 ytd-mini-guide-renderer { /*mini side bar*/
     background-color: transparent;
     border-right: 1px solid var(--bright);
@@ -537,5 +546,68 @@ ytd-button-renderer #button.ytd-button-renderer {
     filter: var(--player-icon-color);
 }
 
+
+/*Section V - Channel page*/
+
+/*Main Channel header*/
+
+#channel-header.style-scope.ytd-c4-tabbed-header-renderer { 
+    background-color: transparent;
+}
+
+/*secondary channel header*/
+
+#channel-container.ytd-c4-tabbed-header-renderer::before, #tabs-container.ytd-c4-tabbed-header-renderer::before { 
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-top: 1px solid var(--bright-2);
+    border-bottom: 1px solid var(--bright-2);
+}
+
+/*channel header links*/
+
+#primary-links.ytd-c4-tabbed-header-renderer, #secondary-links.ytd-c4-tabbed-header-renderer { 
+    background-color: transparent;
+}
+
+#secondary-links.ytd-c4-tabbed-header-renderer { /*Secondary*/
+    border-right: 1px solid var(--bright);
+    border-top: 1px solid var(--bright);
+    border-bottom: 1px solid var(--bright);
+}
+
+#primary-links.ytd-c4-tabbed-header-renderer { /*Primary*/
+    border: 1px solid var(--bright);
+}
+
+#primary-links.ytd-c4-tabbed-header-renderer::before { 
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bright-2);
+    opacity: var(--alpha-25);
+    z-index: -1;
+}
+
+/*Channel page bg*/
+
+ytd-browse[page-subtype=channels] { 
+    background-color: transparent;
+}
+
+/*view email button*/
+
+ytd-button-renderer.style-default[is-paper-button] {
+    background-color: transparent;
+    border: 1px solid var(--bright);
+}
+
+
 /*END of CSS*/
-/*CSS by Sloglykop*/
+/*CSS by Slogllykop*/
