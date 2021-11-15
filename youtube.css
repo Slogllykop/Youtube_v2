@@ -355,6 +355,10 @@ ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-ch
     visibility: hidden;
 }
 
+yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER][selected]:focus { /*selected white bg fix*/
+    background-color: transparent;
+}
+
 /*left bar*/
 
 .style-scope.ytd-app#guide-inner-content {
