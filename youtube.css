@@ -439,6 +439,43 @@ tp-yt-paper-button.ytd-subscribe-button-renderer:hover {
     margin-right: -2rem;
 }
 
+/*Game and category card elow description*/
+
+ytd-rich-metadata-renderer {
+    background-color: transparent;
+    border: 1px solid var(--bright);
+}
+
+/*Channel owner name in comment section*/
+
+.style-scope.ytd-comment-renderer[style="--yt-basic-background-color:rgba(136,136,136,1); --yt-basic-foreground-title-color:rgba(255,255,255,1); --ytd-author-comment-badge-background-color:#888888; --ytd-author-comment-badge-name-color:#ffffff; --ytd-author-comment-badge-icon-color:#ffffff;"] {
+    --yt-basic-background-color: transparent !important;
+    --ytd-author-comment-badge-background-color: var(--bright) !important;
+    --ytd-author-comment-badge-name-color: var(--dark) !important;
+    --ytd-author-comment-badge-icon-color: var(--dark) !important;;
+}
+
+/*Comment button*/
+
+ytd-button-renderer.style-primary[disabled][is-paper-button] { /*comment button*/
+    background-color: transparent;
+    border: 1px solid var(--bright-2);
+    border-radius: 2em;
+}
+
+ytd-button-renderer.style-primary[is-paper-button] { /*while typing*/
+    color: var(--bright);
+    border: 1px solid var(--bright-2);
+    border-radius: 2em;
+    background-color: transparent;
+}
+
+/*missing line while we comment*/
+
+.unfocused-line.tp-yt-paper-input-container {
+    border-bottom: 1px solid var(--bright);
+}
+
 /*Chapters*/
 
 #header.ytd-engagement-panel-title-header-renderer { /*header*/
