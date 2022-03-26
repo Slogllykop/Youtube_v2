@@ -3,12 +3,12 @@ Yet another css for Youtube
 
 ## Installation
 - Make sure that you are using latest version of the browser.
-- [Recomended Method] - Install [User css](https://chrome.google.com/webstore/detail/user-css/okpjlejfhacmgjkmknjhadmkdbcldfcb)
+- [Recomended Method] - Install [User css](https://chrome.google.com/webstore/detail/user-css/okpjlejfhacmgjkmknjhadmkdbcldfcb).
 Open [YouTube](https://www.youtube.com/).
 Click on the *User css* icon from the extension.
 Copy paste the code given below in the extension.
 Customise accordingly. 
-DOne.
+DONE.
 - You can also use other extensions like [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) for the same.
 ```css
 @import url(https://slogllykop.github.io/Youtube_v2/youtube.css);
