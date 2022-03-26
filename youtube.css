@@ -1,6 +1,6 @@
 /*==========================================*/
-/* @version                ver: 0.4.9 alpha */
-/* @Last update            date: 18/11/21   */
+/* @version                ver: 0.5.0 alpha */
+/* @Last update            date: 26/3/21   */
 /*==========================================*/
 
 
@@ -213,7 +213,11 @@ input#search::placeholder {
     opacity: var(--alpha-25);
     border-radius: 17px 0 0 17px;
     z-index: -1;
-    transform: translateX(-1%) !important;
+    left: 0
+}
+
+#search-icon .style-scope.yt-icon { /*new search icon on focus of searchbar*/
+    color: var(--bright)
 }
 
 ytd-searchbox[has-focus] #container.ytd-searchbox {
